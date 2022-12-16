@@ -10,7 +10,7 @@ class Guestbook {
        
         $message = new Message($data['firstName'], 
             $data['lastName'], 
-            date('h:i:s d F Y'),
+            date(' d F Y, H:i:s'),
             $data['message']);
 
         array_unshift($messageArray, $message);
